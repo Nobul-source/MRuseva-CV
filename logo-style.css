@@ -7,8 +7,10 @@
 html,
 body {
     /* height: 100%; */
-  overflow: auto; /* Контролира дали скролбарът се появява */
-  scrollbar-gutter: stable; /* Контролира дали мястото за него е запазено */
+    overflow: auto;
+    /* Контролира дали скролбарът се появява */
+    scrollbar-gutter: stable;
+    /* Контролира дали мястото за него е запазено */
 
 }
 
@@ -27,7 +29,7 @@ body {
     color: #ffffff;
     line-height: 1.6;
     overflow-x: hidden;
-     
+
 }
 
 
@@ -40,7 +42,7 @@ main {
 /* Header and Navigation */
 header {
     position: sticky;
-    top: 0; 
+    top: 0;
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(13, 138, 216, 0.1);
     box-shadow: 0 2px 20px rgba(13, 138, 216, 0.1);
@@ -96,7 +98,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: linear-gradient(115deg,#0D8BD9, #0FB2F2, #FFEDE5);
+    background: linear-gradient(115deg, #0D8BD9, #0FB2F2, #FFEDE5);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -137,13 +139,14 @@ nav .fa-square-xmark:hover {
 /* Logo Section */
 .logo {
 
-   position: relative;
-  width: 100%;
-  padding-top: 60vh; /* създава съотношение височина/ширина */
-  background-image: url(images/LogoDW.svg);
-  background-size: clamp(35%, 45vw, 80%);
-  background-position: center;
-  background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    padding-top: 60vh;
+    /* създава съотношение височина/ширина */
+    background-image: url(images/LogoDW.svg);
+    background-size: clamp(35%, 45vw, 80%);
+    background-position: center;
+    background-repeat: no-repeat;
 
 
     /* display: flex;
@@ -157,20 +160,25 @@ nav .fa-square-xmark:hover {
     background-repeat: no-repeat;
     padding-top: 3rem; */
     /*opacity: 0.15;*/
-    
+
     animation: fadeIn 2s ease-in-out forwards;
 }
 
 
 .logo img {
-  width: clamp(300px, 40vw, 600px);
-  height: auto;
+    width: clamp(300px, 40vw, 600px);
+    height: auto;
 }
 
 /* Animations */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slideIn {
@@ -178,6 +186,7 @@ nav .fa-square-xmark:hover {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -207,7 +216,7 @@ section {
 }
 
 .subheading {
-   /* font-size: clamp(1.2rem, 3vw, 1.8rem);*/
+    /* font-size: clamp(1.2rem, 3vw, 1.8rem);*/
     text-align: center;
     margin: 0.8rem auto;
     max-width: 800px;
@@ -221,7 +230,7 @@ section {
     justify-content: center;
     gap: 1.5rem;
     margin: 1.5rem 0rem 1rem 0rem;
-   
+
 }
 
 .projects {
@@ -273,7 +282,7 @@ section {
 }
 
 .row {
-    display: flex;   
+    display: flex;
     gap: 3rem;
     align-items: start;
 }
@@ -315,7 +324,7 @@ section {
     color: rgba(255, 255, 255, 0.9);
     text-align: justify;
     line-height: 1.6;
-    
+
 }
 
 /* Tabs */
@@ -430,7 +439,7 @@ ul ul {
 
 .services-list div {
     display: flex;
-    
+
     align-items: center;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
@@ -443,7 +452,7 @@ ul ul {
     height: 300px;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .services-list div:hover {
@@ -500,10 +509,10 @@ ul ul {
 
 .image img {
     max-width: 100%;
-    height: auto; 
-    display: block; 
+    height: auto;
+    display: block;
     margin: 0 auto;
-     
+
 }
 
 .work {
@@ -513,7 +522,7 @@ ul ul {
     box-shadow: 0 10px 30px rgba(13, 138, 216, 0.2);
     transition: transform 0.3s ease;
     height: 100%;
-    
+
 }
 
 .work:hover {
@@ -555,7 +564,7 @@ ul ul {
 
 
 .work:nth-child(3) {
-    height: 337px;       
+    height: 337px;
 }
 
 .work:hover img {
@@ -572,9 +581,9 @@ ul ul {
 
 .work:nth-child(3) img {
     max-width: 100%;
-    max-height: 100%;   
+    max-height: 100%;
     height: auto;
-      
+
 }
 
 .layer h3 {
@@ -655,7 +664,7 @@ ul ul {
 }
 
 .social-icons {
-    
+
     display: flex;
     gap: 1rem;
 }
@@ -688,7 +697,7 @@ ul ul {
 
 /* Contact Form */
 .contact-right form {
-     display: flex;
+    display: flex;
     flex-direction: column;
     gap: 1rem;
 }
@@ -752,8 +761,8 @@ footer {
     /* margin:1.5rem 2rem 0 2rem; */
     padding: 1.8rem 3.5rem 1.8rem 1.8rem;
     box-shadow: 2px 0 20px rgba(13, 138, 216, 0.1);
-    
-    
+
+
 }
 
 .footer {
@@ -761,7 +770,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    
+
 }
 
 .footer p {
@@ -776,9 +785,10 @@ footer {
     align-items: center;
     gap: 1.5rem;
 }
+
 .footer ul li {
-    list-style-type:none;
-    
+    list-style-type: none;
+
 }
 
 .footer ul li a {
@@ -789,13 +799,13 @@ footer {
     aspect-ratio: 1/1;
     align-items: center;
 
-   
+
 }
 
 .footer ul li a i {
     font-size: 1.3em;
     aspect-ratio: 1/1;
-    
+
 }
 
 .footer ul li a:hover {
@@ -994,17 +1004,17 @@ label[for=nav-toggle] {
     .container {
         padding: 0 2rem;
     }
-    
+
     .row {
         gap: 2.5rem;
     }
-    
+
     .services-list {
         grid-template-columns: repeat(2, auto);
         gap: 1.2rem;
-    justify-content: center;
+        justify-content: center;
     }
-    
+
     .work-list {
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     }
@@ -1015,7 +1025,7 @@ label[for=nav-toggle] {
     nav {
         padding: 0.5rem 1rem;
     }
-    
+
     nav ul {
         position: fixed;
         top: 0;
@@ -1030,21 +1040,21 @@ label[for=nav-toggle] {
         transition: right 0.5s ease;
         z-index: 1000;
     }
-    
+
     nav .fa-square-xmark,
     nav .fa-bars {
         display: block;
         font-size: 1.3rem;
         z-index: 1001;
     }
-    
+
     nav .fa-square-xmark {
         position: fixed;
         top: 1.5rem;
         right: 1.5rem;
         color: #ffffff;
     }
-    
+
     nav ul li a {
         color: #ffffff;
         font-size: 1.2rem;
@@ -1054,119 +1064,119 @@ label[for=nav-toggle] {
         border-radius: 15px;
         transition: all 0.3s ease;
     }
-    
+
     nav ul li a:hover {
         background: rgba(255, 255, 255, 0.2);
         transform: translateY(-2px);
     }
-    
+
     nav ul li a .fa-solid {
         margin-right: 0.8rem;
         font-size: 1rem;
     }
-    
+
     .logo {
         height: 50vh;
         background-size: 70%;
     }
-    
+
     .headline {
         font-size: clamp(1.8rem, 4vw, 2.5rem);
         margin: 1rem 0;
     }
-    
+
     .subheading {
         font-size: clamp(1rem, 2.5vw, 1.3rem);
         padding: 0 1rem;
     }
-    
+
     #buttons {
-    flex-direction: column;
+        flex-direction: column;
         align-items: center;
         gap: 1rem;
         margin: 1.5rem 0;
     }
-    
+
     .projects {
-    width: 100%;
+        width: 100%;
         max-width: 300px;
-    text-align: center;
+        text-align: center;
         padding: 0.7rem 1.5rem;
         font-size: 0.9rem;
     }
-    
+
     .row {
         flex-direction: column;
         gap: 2rem;
     }
-    
+
     .about-col-1 {
         order: 1;
         max-width: 300px;
         margin: 0 auto;
         text-align: center;
     }
-    
+
     .about-col-2 {
         order: 2;
         text-align: center;
     }
-    
+
     .tab-titles {
-    justify-content: center;
+        justify-content: center;
         gap: 1rem;
         flex-wrap: wrap;
     }
-    
+
     .tab-links {
         font-size: 1rem;
         padding: 0.4rem 0.8rem;
     }
-    
+
     .services-list {
         grid-template-columns: 1fr;
         gap: 1.2rem;
         justify-content: center;
     }
-    
+
     .services-list div {
         padding: 1.2rem;
         width: 240px;
         height: 240px;
         margin: 0 auto;
     }
-    
+
     .work-list {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    
+
     #contacts .row {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
-    .contact-left {
-    text-align: center;
-}
 
-.contact-left p {
+    .contact-left {
+        text-align: center;
+    }
+
+    .contact-left p {
         font-size: 1.1rem;
-    justify-content: center;
-}
+        justify-content: center;
+    }
 
     .social-icons {
-    justify-content: center;
+        justify-content: center;
         flex-wrap: wrap;
     }
-    
+
     .footer {
         flex-direction: column;
         text-align: center;
         gap: 1rem;
         padding: 1rem;
     }
-    
+
     .footer ul {
         justify-content: center;
     }
@@ -1177,79 +1187,79 @@ label[for=nav-toggle] {
     .img {
         width: 3.5rem;
     }
-    
+
     section {
         padding: 0 0.8rem;
         margin-bottom: 1.5rem;
     }
-    
+
     .logo {
         height: 40vh;
         background-size: 80%;
         margin: 0.5rem 0;
     }
-    
+
     .headline {
         font-size: clamp(1.5rem, 3.5vw, 2rem);
         margin: 0.8rem 0;
         line-height: 1.2;
     }
-    
+
     .subheading {
         font-size: clamp(0.9rem, 2.2vw, 1.1rem);
         padding: 0 0.5rem;
         margin: 0.8rem auto;
         line-height: 1.4;
     }
-    
+
     #buttons {
         margin: 1rem 0;
         gap: 0.8rem;
     }
-    
+
     .projects {
         padding: 0.7rem 1.2rem;
         font-size: 0.85rem;
         border-radius: 25px;
     }
-    
+
     .container {
         padding: 0 1rem;
     }
-    
+
     .about-col-1 {
         max-width: 250px;
         order: 1;
         margin: 0 auto 1.5rem auto;
     }
-    
+
     .about-col-2 {
         order: 2;
         text-align: center;
     }
-    
+
     .about-col-2 p {
         text-align: justify;
         margin: 0 auto;
         max-width: 100%;
     }
-    
+
     .sub-title {
         font-size: clamp(1.4rem, 3vw, 1.8rem);
         padding: 0.6rem 1rem;
         margin-bottom: 1rem;
     }
-    
+
     .tab-titles {
         gap: 0.8rem;
         margin: 1.5rem 0;
     }
-    
+
     .tab-links {
         font-size: 0.9rem;
         padding: 0.3rem 0.6rem;
     }
-    
+
     .services-list div {
         padding: 1rem;
         border-radius: 12px;
@@ -1257,107 +1267,107 @@ label[for=nav-toggle] {
         height: 200px;
         margin: 0 auto;
     }
-    
+
     .services-list div .fa-solid {
         font-size: 1.8rem;
         margin-bottom: 0.6rem;
     }
-    
+
     .services-list div h2 {
         font-size: 0.9rem;
         margin-bottom: 0.6rem;
         line-height: 1.1;
     }
-    
+
     .services-list div p {
         font-size: 0.75rem;
         line-height: 1.2;
     }
-    
+
     .work-list {
         gap: 1rem;
     }
-    
+
     .work {
         border-radius: 12px;
     }
-    
+
     .work img {
         border-radius: 12px;
     }
-    
+
     .layer {
         border-radius: 12px;
-        
+
     }
-    
+
     .layer h3 {
         font-size: 1.1rem;
         margin-bottom: 0.8rem;
     }
-    
+
     .layer p {
         font-size: 0.9rem;
         margin-bottom: 1rem;
     }
-    
+
     .layer a {
         width: 50px;
         height: 50px;
         font-size: 1rem;
     }
-    
+
     .contact-left p {
         font-size: 1rem;
         margin: 1rem 0;
     }
-    
+
     .contact-left p i {
         font-size: 1.1rem;
         margin-right: 0.8rem;
     }
-    
+
     .social-icons a {
         width: 45px;
         height: 45px;
         font-size: 1.3rem;
     }
-    
+
     .contact-right form {
         gap: 0.8rem;
     }
-    
+
     form input,
     form textarea {
         padding: 0.8rem;
         font-size: 0.9rem;
         border-radius: 8px;
     }
-    
+
     .btn.btn2 {
         padding: 0.8rem 1.5rem;
         font-size: 0.9rem;
         border-radius: 25px;
     }
-    
+
     .footer {
         padding: 1rem 0.8rem;
     }
-    
+
     .footer p {
         font-size: 0.8rem;
     }
-    
+
     .footer ul li a {
         width: 35px;
         height: 35px;
         font-size: 1.3rem;
     }
-    
+
     .copywright {
         padding: 1rem;
     }
-    
+
     .copywright p {
         font-size: 0.8rem;
     }
@@ -1368,24 +1378,24 @@ label[for=nav-toggle] {
     .headline {
         font-size: clamp(1.3rem, 3vw, 1.7rem);
     }
-    
+
     .subheading {
         font-size: clamp(0.8rem, 2vw, 1rem);
     }
-    
+
     .projects {
         padding: 0.6rem 1rem;
         font-size: 0.8rem;
     }
-    
+
     .services-list div {
         padding: 1rem 0.8rem;
     }
-    
+
     .contact-left p {
         font-size: 0.9rem;
     }
-    
+
     .social-icons a {
         width: 40px;
         height: 40px;
@@ -1398,7 +1408,7 @@ label[for=nav-toggle] {
     .container {
         max-width: 1600px;
     }
-    
+
     nav {
         max-width: 1600px;
     }
@@ -1414,13 +1424,13 @@ label[for=nav-toggle] {
         background: white !important;
         color: black !important;
     }
-    
+
     nav,
     footer,
     .logo {
         display: none;
     }
-    
+
     .headline,
     .subheading {
         color: black !important;
