@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://sitemaps.org">
+  <url>
+    <loc>https://vercel.app</loc>
+    <lastmod>2026-11-22</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://vercel.appabout.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vercel.appservices.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vercel.appportfolio.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://vercel.appcontacts.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+</urlset>
